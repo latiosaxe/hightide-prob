@@ -1,0 +1,104 @@
+.site__header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+
+
+  .site__header_title {
+    position: absolute;
+    top: 1.25em;
+    background: url("~assets/images/hightide.svg") no-repeat;
+    width: 8.5em;
+    height: 2em;
+    background-size: contain;
+  }
+
+  .white_logo {
+    position: absolute;
+    top: 1.25em;
+    background: url("~assets/images/hightide_white.svg") no-repeat;
+    width: 8.5em;
+    height: 2em;
+    background-size: contain;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 1em;
+  }
+
+  .nav-item:hover {
+    text-decoration: none;
+  }
+
+  .nav-item {
+    padding: 0.5em 0;
+    color: #000;
+  }
+
+  h1 {
+    top: -9998px;
+    left: -9998px;
+    position: absolute;
+  }
+
+  .navbar-dark, .navbar-light {
+    padding: 12px 0;
+    .nav-link {
+      border-bottom: 1px solid transparent;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+  }
+
+  .navbar-light {
+    .nav-link:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  .navbar-dark {
+    background: transparent;
+
+    .nav-link:hover {
+      border-bottom: 1px solid #fff;
+    }
+
+    .nav-item, .nav-link {
+      color: #fff;
+    }
+  }
+}
+
+.site__header > .navbar-dark {
+  background: #000;
+}
+
+@include phone {
+  .site__header {
+    padding: 0;
+
+    .site__header_title {
+      top: 0.75em;
+      left: 0;
+      width: 6em;
+    }
+
+    .navbar-dark, .navbar-light {
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+      padding: 0;
+    }
+
+    .navbar-collapse {
+      margin-top: 1em;
+    }
+  }
+}

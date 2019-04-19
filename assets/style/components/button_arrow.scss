@@ -1,0 +1,192 @@
+$black: #000;
+$white: #FFF;
+
+$text-arrow-space: 16px;
+$shaft-width: 1px;
+$newshaft-width: 50px;
+$shaft-thickness: 1px;
+$arrow-head-width: 8px;
+$arrow-head-thickness: $shaft-thickness;
+
+.animated-arrow {
+  cursor: pointer;
+  padding-left: 40px;
+  // padding: 4px 0 4px 40px;
+  .the-arrow {
+    width: $shaft-width;
+    transition: all 0.2s;
+    &.-left {
+      position: absolute;
+      top: 47%;
+      left: 0;
+      > .shaft {
+        width: 0;
+        background-color: $black;
+        &:before,
+        &:after {
+          width: 0;
+          background-color: $black;
+        }
+        &:before {
+          transform: rotate(0);
+        }
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+    &.-right {
+      top: 1px;
+      > .shaft {
+        width: $shaft-width;
+        transition-delay: 0.2s;
+        &:before,
+        &:after {
+          width: $arrow-head-width;
+          transition-delay: 0.3s;
+          transition: all 0.5s;
+        }
+        &:before {
+          transform: rotate(40deg);
+        }
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+      &:before{
+        right: 0;
+        content: '';
+        width: 40px;
+        height: 1px;
+        background: $black;
+        position: absolute;
+        transition-delay: 0.3s;
+        transition: all 0.5s;
+      }
+    }
+    > .shaft {
+      background-color: $black;
+      display: block;
+      height: $shaft-thickness;
+      position: relative;
+      transition: all 0.2s;
+      transition-delay: 0;
+      will-change: transform;
+      &:before,
+      &:after {
+        background-color: $black;
+        content: '';
+        display: block;
+        height: $arrow-head-thickness;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s;
+        transition-delay: 0;
+      }
+      &:before {
+        transform-origin: top right;
+      }
+      &:after {
+        transform-origin: bottom right;
+      }
+    }
+  }
+
+  .main{
+    transition: all 0.2s;
+    transition-delay: 0;
+    .text{
+      transform: translateX(-40px);
+      transform: translateX(-40px);
+    }
+  }
+}
+
+.animated-arrow {
+  color: $black;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover {
+    color: $black;
+    > .the-arrow.-left {
+      > .shaft {
+        width: $newshaft-width - 10px;
+        transition-delay: 0.1s;
+        background-color: $black;
+        &:before,
+        &:after {
+          width: $arrow-head-width;
+          transition-delay: 0.1s;
+          background-color: $black;
+        }
+        &:before {
+          transform: rotate(40deg);
+        }
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+    > .main {
+      transform: translateX($shaft-width + $text-arrow-space - 10px);
+      transform: translateX($newshaft-width + $text-arrow-space - 10px);
+      > .the-arrow.-right {
+        &:before{
+          width: 0;
+        }
+        > .shaft {
+          width: 0;
+          transform: translateX(200%);
+          transition-delay: 0;
+          &:before,
+          &:after {
+            width: 0;
+            transition-delay: 0;
+            transition: all 0.1s;
+          }
+          &:before {
+            transform: rotate(0);
+          }
+          &:after {
+            transform: rotate(0);
+          }
+        }
+      }
+    }
+  }
+  > .main {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    > .text {
+      margin: 0 $text-arrow-space 0 0;
+      line-height: 1;
+    }
+    > .the-arrow {
+      position: relative;
+    }
+  }
+}
+
+@include phone {
+  .animated-arrow {
+    span.text.site__home__title {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: block-axis;
+      overflow-y: hidden;
+      margin: 0;
+    }
+
+    .the-arrow {
+      &.-right {
+        &:before{
+          width: 30px;
+        }
+      }
+    }
+  }
+}

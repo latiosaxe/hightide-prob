@@ -1,0 +1,17 @@
+.component__hero_text {
+  .hero_text {
+    font-size: 4em;
+    font-family: $font-family-lyon;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+  }
+}
+
+@include phone {
+  .component__hero_text {
+    .hero_text {
+      font-size: 30px;
+    }
+  }
+}

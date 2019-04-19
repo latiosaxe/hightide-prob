@@ -1,0 +1,71 @@
+.site__journal {
+  padding: 160px 65px 50px 65px;
+
+  .posts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .post-name {
+    font-size: 20px;
+  }
+
+  .post-date {
+    float: right;
+  }
+
+  .post-item {
+    margin-bottom: 2.5em;
+    width: 45%;
+    a {
+      color: #000;
+    }
+  }
+
+  .post-main-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .see-more {
+    cursor: pointer;
+    text-align: center;
+    color: $color_gray;
+  }
+
+  .see-more:hover {
+    span {
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+@include phone {
+  .site__journal {
+    padding: 50px 20px;
+
+    .posts-container {
+      padding-top: 1.5em;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .post-name, .post-date {
+      font-size: 14px;
+    }
+
+    .post-item {
+      width: 100%;
+      img {
+        max-height: 188px;
+      }
+    }
+
+    .see-more {
+      margin-top: 3em;
+    }
+  }
+}

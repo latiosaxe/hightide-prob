@@ -1,0 +1,114 @@
+.site__about {
+
+  hr {
+    border-top: 1px solid #000;
+  }
+  .col_underline .head {
+    border-bottom: none;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  &__hero {
+    font-size: 58px;
+    font-family: $font-family-lyon;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+  }
+
+  &__hero_image {
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    max-height: 600px;
+    background: center center no-repeat $color_place_holder;
+    background-size: cover;
+  }
+
+  .item-border-top.component_toggle_text_list .row .col .site__toogle_text{
+    border-top: 1px solid #000;
+    border-bottom: none;
+  }
+
+  .site__toogle_text__body {
+    margin-top: 1em;
+  }
+
+  .site__toogle_text__body.opened {
+    margin-bottom: 2em;
+  }
+
+  #careers .site__toogle_text__body__html {
+    width: 75%;
+    padding-bottom: 1px;
+  }
+
+  .component_buttonArrow_list .buttonArrow-container .col .animated-arrow {
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+@include phone {
+  .site__about_dropdowns{
+    display: block;
+  }
+
+  .white-section {
+    padding: 50px 0;
+  }
+
+  .site__vertical_space {
+    height: 50px;
+  }
+
+  .col-hero {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .site__about {
+    padding-top: 4em;
+
+    &__hero {
+      font-size: 30px;
+    }
+
+    &__capabilities {
+      align-items: flex-end;
+      border-bottom: 1px solid #000;
+      margin: 20px 0;
+      .col_underline .head {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      font-size: 15px;
+    }
+
+    .site__toogle_text__head {
+      margin-top: 15px;
+    }
+
+    .site__home__capabilities {
+      border-bottom: none;
+      margin: 0;
+        .col {
+          padding: 0;
+        }
+    }
+
+    .site__careers {
+      padding-top: 0;
+      .site__toogle_text__body {
+        margin-top: 15px;
+      }
+    }
+  }
+}

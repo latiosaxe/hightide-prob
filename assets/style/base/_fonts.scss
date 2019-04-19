@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Lyon';
+    src:url('/assets/fonts/LyonDisplay-Light-Web.woff2') format('woff2'),
+        url('/assets/fonts/LyonDisplay-Light-Web.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'America';
+  src: url('/assets/fonts/GT-America-Standard-Light.eot');
+  src: url('/assets/fonts/GT-America-Standard-Light.ttf')format('truetype'),
+       url('/assets/fonts/GT-America-Standard-Light.woff2')format('woff2'),
+       url('/assets/fonts/GT-America-Standard-Light.woff')format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'America-Medium';
+  src: url('/assets/fonts/GT-America-Standard-Medium.eot');
+  src: url('/assets/fonts/GT-America-Standard-Medium.ttf')format('truetype'),
+  url('/assets/fonts/GT-America-Standard-Medium.woff2')format('woff2'),
+  url('/assets/fonts/GT-America-Standard-Medium.woff')format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'America-Regular';
+  src: url('/assets/fonts/GT-America-Standard-Regular.eot');
+  src: url('/assets/fonts/GT-America-Standard-Regular.ttf')format('truetype'),
+  url('/assets/fonts/GT-America-Standard-Regular.woff2')format('woff2'),
+  url('/assets/fonts/GT-America-Standard-Regular.woff')format('woff');
+  font-weight: 300;
+  font-style: normal;
+}

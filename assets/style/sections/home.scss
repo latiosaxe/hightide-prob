@@ -1,0 +1,43 @@
+.site__home {
+  .site__home__title a {
+    color: #000;
+  }
+
+  #careers .site__toogle_text__body__html {
+    width: 75%;
+    padding-bottom: 1px;
+  }
+
+  #home-hero.featured__work .featured__work__hero_image {
+    max-height: unset;
+  }
+
+  .site__grid_clients__single__image {
+    transition: 0.5s;
+  }
+}
+
+@include phone {
+  .site__home_dropdowns {
+    display: block;
+  }
+
+  .site__home {
+    padding-top: 4em;
+
+    &__capabilities {
+      align-items: flex-end;
+      border-bottom: 1px solid #000;
+      margin: 10px 0;
+
+      .col_underline .head {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      font-size: 15px;
+    }
+  }
+}

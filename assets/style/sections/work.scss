@@ -1,0 +1,55 @@
+.site__work {
+  color: #fff;
+  padding: 160px 65px 50px 65px;
+
+  .clients-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .client-item {
+    margin-bottom: 1.5em;
+    width: calc(50% - 0.5em);
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+  }
+
+  .work-main-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 0.5em;
+    border: 1px solid #222;
+  }
+}
+
+@include phone {
+  .site__work {
+    padding: 50px 20px;
+
+    .clients-container {
+      padding-top: 1.5em;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .client-name {
+      font-size: 14px;
+    }
+
+    .client-item {
+      width: 100%;
+      img {
+        max-height: 188px;
+      }
+    }
+
+  }
+}

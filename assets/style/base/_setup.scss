@@ -1,0 +1,131 @@
+.site {
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  line-height: 110%;
+  font-family: "America" !important;
+  transition: background-color 1s;
+}
+
+.site_page {
+  padding-top: 150px;
+}
+
+.h1 {
+  font-size: 58px;
+  font-family: $font-family-lyon;
+}
+
+a.btn {
+  color: #000;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
+.margin-bottom-80 {
+  margin-bottom: 80px;
+}
+
+.white-section {
+  width: 100%;
+  background: #FFF;
+  padding: 100px 0;
+}
+
+.row_underline {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.no-sides-padding {
+  .col{
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.col_underline {
+  .head {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.site__vertical_space {
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: relative;
+}
+
+.black-bg {
+  background: #000 !important;
+}
+
+.not-displayed {
+ display: none !important;
+}
+
+/*** CMS ***/
+.hyperlink {
+  cursor: pointer;
+  color: #999 !important;
+}
+
+.hyperlink:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.strong {
+  font-family: America-Medium;
+  font-weight: bold;
+  width: 100%;
+}
+
+.em {
+  font-style: italic;
+}
+
+br {
+  line-height: 2.5em;
+}
+
+.lazy-img {
+  opacity: 0 !important;
+  transition: 2s;
+}
+
+.block {
+  display: block !important;
+}

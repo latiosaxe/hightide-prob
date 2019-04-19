@@ -1,0 +1,139 @@
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx){
+  .site__footer {
+    color: $color_gray !important;
+    a, a:hover {
+      color: $color_gray !important;
+    }
+
+    a:hover {
+      border-bottom: 1px solid $color_gray !important;
+    }
+  }
+}
+
+.site__footer {
+  background: #000;
+  min-height: 300px;
+  padding: 4em 0;
+  border-top: #DDDDDD solid 1px;
+  color: #f8f7f3;
+
+  a {
+    color: #f8f7f3;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #f8f7f3;
+  }
+
+  .footer_col {
+    width: 100%;
+  }
+
+  .footer__title {
+    color: #fff;
+    margin-bottom: 2em;
+
+    label {
+      width: 100%;
+    }
+
+    input {
+      color: #fff;
+      background: #000;
+      border: none;
+      border-radius: unset;
+      border-bottom: solid 1px $color_gray;
+      padding: 0;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: #fff;
+      -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+
+  .footer__info {
+    margin-bottom: 1em;
+  }
+
+  .footer_contact {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .footer_follow {
+    width: 50%;
+  }
+
+  .footer_follow, .footer__stay_updated {
+    margin-left: 30%;
+  }
+
+  .footer__arrow_form {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2.5em;
+    left: 75%;
+  }
+}
+
+@include phone {
+  .site__footer {
+    padding: 1em 0;
+
+    .footer_row {
+      flex-direction: column;
+
+      .col-4 {
+        max-width: 100%;
+      }
+
+      hr {
+        margin-left: 0;
+        margin-bottom: 2em;
+      }
+    }
+
+    .footer_contact, .footer_follow {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .footer__title {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    label {
+      width: 100%;
+    }
+
+    .footer__arrow_form {
+      position: absolute;
+      bottom: 2.5em;
+      left: calc(100% - 30px);
+      font-size: 120%;
+    }
+
+    .footer__stay_updated {
+      margin-left: 0;
+    }
+  }
+}

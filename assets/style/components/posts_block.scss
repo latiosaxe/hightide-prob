@@ -1,0 +1,63 @@
+.posts__block {
+  margin-bottom: 2em;
+
+  .full-height {
+    height: calc(100% - 23px) !important;
+  }
+
+  .half-height {
+    height: 300px;
+  }
+
+  a {
+    color: #000;
+    span {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+    span {
+      border-bottom: 1px solid;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+  }
+
+  .posts__block_date {
+    float: right;
+  }
+
+  .two-images {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@include phone {
+  .posts__block {
+    flex-direction: column;
+    margin-bottom: 0;
+
+    img {
+      min-height: 300px;
+    }
+
+    .posts__block_title {
+      display: inline-block;
+      max-width: 50%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .col-sm-12 {
+      margin-bottom: 20px;
+    }
+  }
+}
