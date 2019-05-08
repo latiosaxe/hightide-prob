@@ -111,6 +111,12 @@ $arrow-head-thickness: $shaft-thickness;
   transition: all 0.2s;
   &:hover {
     color: $black;
+    text-decoration: none;
+    span.text.site__home__title {
+      .text-only {
+        border-bottom: solid 1px $black;
+      }
+    }
     > .the-arrow.-left {
       > .shaft {
         width: $newshaft-width - 10px;
@@ -173,11 +179,13 @@ $arrow-head-thickness: $shaft-thickness;
 
 @include phone {
   .animated-arrow {
+    padding-left: 0;
+
     span.text.site__home__title {
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: block-axis;
-      overflow-y: hidden;
+      /* overflow-y: hidden; */
       margin: 0;
     }
 

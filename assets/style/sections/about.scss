@@ -50,6 +50,20 @@
     margin: 0;
     margin-bottom: 0.5em;
   }
+
+  .site__home__capabilities {
+    .col_underline .head {
+      margin-bottom: 0;
+      padding-bottom: 18px;
+    }
+  }
+
+  #section_title_Recognition {
+    .component_section_title_text {
+      margin-bottom: 19px;
+    }
+  }
+
 }
 
 @include phone {
@@ -109,6 +123,10 @@
       .site__toogle_text__body {
         margin-top: 15px;
       }
+    }
+
+    .animated-arrow {
+      padding-left: 40px;
     }
   }
 }

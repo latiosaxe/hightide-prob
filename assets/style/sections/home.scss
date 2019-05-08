@@ -13,7 +13,6 @@
   }
 
   .site__grid_clients__single__image {
-    transition: 0.5s;
   }
 }
 
@@ -38,6 +37,24 @@
 
     &__title {
       font-size: 15px;
+    }
+
+    .site__toogle_text__head__icon {
+      top: 5px;
+    }
+
+    #careers_ToggleTextList_container {
+      #careers_ToggleTextList_container_item_0, #careers_ToggleTextList_container_item_2 {
+        .site__toogle_text__head__icon {
+          top: 1.25em;
+        }
+      }
+
+      #careers_ToggleTextList_container_item_1 {
+        .site__toogle_text__head__icon {
+          top: 0.5em;
+        }
+      }
     }
   }
 }

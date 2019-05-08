@@ -4,7 +4,7 @@ import Vue from 'vue'
 import JQuery from 'jquery'
 
 const utils = {
-  setLazyImages (classSelector, tagSelector) {
+  setLazyImages (classSelector, tagSelector = 'img') {
     let $ = JQuery;
     const selector = tagSelector + '.' + classSelector;
     $(document).ready(function () {
